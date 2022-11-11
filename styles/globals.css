@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer utilities {
+  .big-btn {
+    @apply px-4 py-3 rounded-full text-center flex items-center justify-center text-black font-medium drop-shadow-sm hover:drop-shadow-lg;
+  }
+
+  .h1-text-xs {
+    @apply font-bold text-2xl;
+  }
+  .h1-text-md {
+    @apply font-bold text-[40px];
+  }
+  .medium-text-sm {
+    @apply font-medium text-sm;
+  }
+  .bold-text-xl {
+    @apply font-bold text-xl;
+  }
+  .bold-text-md {
+    @apply font-bold;
+  }
+
+  .h1-text-xs {
+    @apply font-bold text-2xl;
+  }
+  .h1-text-md {
+    @apply font-bold text-[40px];
+  }
+  .regular-text-xs {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .regular-text-sm {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .regular-text-md {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+  }
+  .medium-text-sm {
+    @apply font-medium text-sm;
+  }
+  .medium-text-md {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+  }
+  .bold-text-xl {
+    @apply font-bold text-xl;
+  }
+  .bold-text-md {
+    @apply font-bold;
+  }
+  .bold-display-xs {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .bold-display-sm {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+  .bold-display-lg {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .bold-display-2xl {
+    @apply font-bold;
+    font-family: Inter;
+    font-size: 90px;
+    font-style: normal;
+    line-height: 117px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .semibold-text-md {
+    @apply font-semibold;
+  }
+  .semibold-text-sm {
+    @apply font-semibold text-sm;
+  }
+  .semibold-text-xs {
+    @apply font-semibold;
+  }
+  .semibold-text-lg {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .semibold-display-sm {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.nlk-gradient {
+  background: rgb(255, 200, 55);
+  background: linear-gradient(149deg, rgba(255, 200, 55, 1) 0%, rgba(255, 128, 8, 1) 100%);
+}
+
+.nlk-gradient-lite {
+  background: rgb(255, 200, 55);
+  background: linear-gradient(149deg, rgba(255, 200, 55, 0.1) 0%, rgba(255, 128, 8, 0.1) 100%);
+}
+
+.gradient-blue {
+  background: rgb(221, 231, 255);
+  background: linear-gradient(135deg, rgba(221, 231, 255, 1) 0%, rgba(212, 212, 246, 1) 100%);
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(11.6px);
+}
+
+.min-h-8 {
+  min-height: 32px;
+}
